@@ -27,4 +27,10 @@ public class AnalysisReader {
 		return fileLines;
 	}
 
+	public AnalysisReader(String fileName) throws ArquivoNaoEncontradoException{
+		this.openFile(fileName);
+	}
+
+
+
 }
