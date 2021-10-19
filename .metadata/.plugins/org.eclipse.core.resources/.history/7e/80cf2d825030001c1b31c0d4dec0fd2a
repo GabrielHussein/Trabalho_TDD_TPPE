@@ -1,0 +1,10 @@
+package main.java.project;
+
+public class FileReader {
+    private String fileName;
+    
+	private void openFile(String fileName) throws ArquivoNaoEncontradoException{
+
+	}
+
+}

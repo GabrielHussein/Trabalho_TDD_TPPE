@@ -1,0 +1,10 @@
+package main.java.project;
+
+public class FileReader {
+    private String filename;
+
+	public String getFilename() {
+		return filename;
+	}
+    
+}

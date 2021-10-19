@@ -1,0 +1,18 @@
+package test.java.project;
+import org.junit.jupiter.api.Test;
+
+import main.java.project.AnalysisReader;
+import main.java.project.exception.ArquivoNaoEncontradoException;
+
+public class AnalysisReaderTest {
+    @Test
+    public void testOpenFileSuccess(){
+        
+    }
+
+    @Test
+    public void testOpenFileFail(){
+        assertThrows(ArquivoNaoEncontradoException.class, ()->new AnalysisReader("failFile"));
+        AnalysisReader mockReader = new AnalysisReader("failFile");
+    }
+}

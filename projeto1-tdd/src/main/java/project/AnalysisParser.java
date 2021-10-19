@@ -8,8 +8,6 @@ import main.java.project.exception.DelimitadorInvalidoException;
 public class AnalysisParser {
     
 	private String delimiter;
-	
-	
 
 	public AnalysisParser(String userDelimiter, List<String> fileLines) throws DelimitadorInvalidoException{
 		this.setDelimiter(userDelimiter);
@@ -28,24 +26,24 @@ public class AnalysisParser {
 			throw new DelimitadorInvalidoException();
 		}
 	}
-	
-	public List<List<String>> parseFile(List<String> fileLines, String delimiter){
-		List<List<String>> parseList = new ArrayList<List<String>>();
-		List<String> evolutionList = new ArrayList<>();
-		int evolutionIndex = 0;
+
+	public List<String[]> parseFile(List<String> fileLines, String delimiter){
+		List<String[]> parseList = new ArrayList<String[]>();
+		String[] evolutionList = new String[fileLines.size()];
+		int evolutionIndex = 0, arrayIndex = 0;
 		for(String line : fileLines)
         {	
-			if(line.substring(0, 3).equals("----")){
-				line = String.valueOf(evolutionIndex);
-				evolutionList.add(line + delimiter);
+			if(line.substring(0, 3).equals("---")){
 				if(evolutionIndex != 0) {
 					parseList.add(evolutionList);
+					arrayIndex++;
 				}
 				evolutionIndex++;
+				evolutionList[arrayIndex] = delimiter;
+			} else {
+				evolutionList[arrayIndex] += line + delimiter;
 			}
-            evolutionList.add(line + delimiter);
         }
 		return parseList;
 	}
-
 }

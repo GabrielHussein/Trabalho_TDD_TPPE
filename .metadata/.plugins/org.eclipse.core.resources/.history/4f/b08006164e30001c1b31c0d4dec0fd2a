@@ -1,0 +1,7 @@
+package main.java.project.exception;
+
+public class ArquivoNaoEncontradoException extends Exception {
+	public ArquivoNaoEncontradoException(String fileName) {
+		super("Arquivo " + fileName + " não foi encontrado");
+	}
+}

@@ -1,0 +1,16 @@
+INDEX VERSION 1.131+/home/rafaella/Documentos/repositorios/Trabalho_TDD_TPPE/.metadata/.plugins/org.eclipse.jdt.core
+547558432.index
+438422425.index
+167320811.index
+182143364.index
+1546316387.index
+2539678666.index
+1610493072.index
+3702964456.index
+3839425156.index
+646308851.index
+1539868260.index
+1024915778.index
+3152823197.index
+1008318505.index
+2957899643.index

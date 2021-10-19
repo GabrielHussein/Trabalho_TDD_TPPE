@@ -1,0 +1,23 @@
+package main.java.project;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+import main.java.project.exception.ArquivoNaoEncontradoException;
+
+public class Reader {
+    private String fileName;
+    
+	private String[] openFile(String fileName) throws ArquivoNaoEncontradoException{
+		try{
+			File file = new File("src/main/resources/" + fileName);
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+
+		} catch (Exception e) {
+			new ArquivoNaoEncontradoException(fileName);
+		}
+	}
+
+
+
+}

@@ -1,0 +1,15 @@
+package test.java.project;
+import org.junit.jupiter.api.Test;
+import main.java.project.AnalysisReader;
+
+public class AnalysisReaderTest {
+    @Test
+    public void testOpenFileSuccess(){
+        
+    }
+
+    @Test
+    public void testOpenFileFail(){
+        AnalysisReader mockReader = new AnalysisReader("failFile");
+    }
+}
