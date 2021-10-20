@@ -1,6 +1,7 @@
 # Trabalho_TDD_TPPE
 
 Repositório criado para desenvolver trabalho da disciplina Tópicos de Programação para Plataformas Emergentes 2021/1, com tema focado em TDD.
+Projeto maven utilizando como dependências o Spring Framework e testes utilizando JUnit5 Jupiter Engine Dependency.
 
 Segue em tabela abaixo os contribuidores do projeto.
 
