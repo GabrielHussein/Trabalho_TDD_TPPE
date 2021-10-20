@@ -7,7 +7,6 @@ INDEX VERSION 1.131+/home/rafaella/Documentos/repositorios/Trabalho_TDD_TPPE/.me
 1546316387.index
 1024915778.index
 3702964456.index
-1610493072.index
 1539868260.index
 3152823197.index
 2539678666.index

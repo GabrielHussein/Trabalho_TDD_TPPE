@@ -21,7 +21,7 @@ public class AnalysisWriterTest {
 	@Test
 	 public void testfileNameSuccess() throws EscritaNaoPermitidaException, IOException{
 		String[] mockParse = new String[] {";1155;574;",";5478;1478;", ";5478;1478;"};
-		AnalysisWriter writerMock = new AnalysisWriter(mockParse, 1, "./src/test/resources/", "analysisMemory.out");
+		AnalysisWriter writerMock = new AnalysisWriter(mockParse, 1, "./src/test/resources/", "failTest.out");
 		assertEquals(writerMock.isWriteSuccess(), true);
     }
 }
