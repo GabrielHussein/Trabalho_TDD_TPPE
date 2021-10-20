@@ -24,16 +24,49 @@ public class AnalysisWriter {
             filePath invalido
             */
             int lineCounter = 0;
+            String singleLine = "";
             File completeFile = new File(filePath, fileName);
             BufferedWriter writer = new BufferedWriter(new FileWriter(completeFile));
-            for(String line : parseList){
-                String singleLine = lineCounter + line;
-                writer.write(singleLine);
-                writer.newLine();
-                lineCounter++;	
+            
+            if (fileFormat == 0) {
+            	int parseListLength = parseList.length;
+            	
+            	String[] arrayAux = parseList[0].split(";");
+            	int arraySize = arrayAux.length;
+            	
+            	int counter = 0;
+            	
+            	for (int k = 0; k < parseListLength; k++) {
+            		singleLine += counter + ";";
+            		counter ++;
+            	}
+            	
+            	writer.write(singleLine);
+            	writer.newLine();
+            	
+            	for (int i = 1; i < arraySize; i++) {
+            		singleLine = "";
+            		for (int j = 0; j < parseListLength; j++) {
+            			singleLine += parseList[j].split(";")[i] + ";";
+            		}
+            		writer.write(singleLine);
+            		writer.newLine();
+            	}
+            	
+            	setWriteSuccess(true);
+            	writer.close();
+            	
+            } else {
+            	for(String line : parseList){
+            		singleLine = lineCounter + line;
+            		writer.write(singleLine);
+            		writer.newLine();
+            		lineCounter++;	
+            	}
+            	setWriteSuccess(true);
+            	writer.close();
             }
-            setWriteSuccess(true);
-            writer.close();
+            
         } else {
             setWriteSuccess(false);
             throw new EscritaNaoPermitidaException();
