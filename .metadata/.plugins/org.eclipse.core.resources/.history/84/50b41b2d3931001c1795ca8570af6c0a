@@ -1,0 +1,30 @@
+package test.java.project;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.project.AnalysisWriter;
+import main.java.project.exception.EscritaNaoPermitidaException;
+
+
+public class AnalysisWriterTest {
+
+	@Test
+	 public void testfileNameFail() throws EscritaNaoPermitidaException{
+		String[] mockParse = new String[] {";1155;574;",";5478;1478;"};
+		List<String[]> mockParseList = new ArrayList<String[]>();
+		mockParseList.add(mockParse);
+		assertThrows(EscritaNaoPermitidaException.class, () -> {new AnalysisWriter(mockParseList, 1, "failTest", "failTest.out");});
+    }
+
+	@Test
+	 public void testfileNameSuccess() throws EscritaNaoPermitidaException, IOException{
+		String[] mockParse = new String[] {";1155;574;",";5478;1478;"};
+		List<String[]> mockParseList = new ArrayList<String[]>();
+		mockParseList.add(mockParse);
+		AnalysisWriter writerMock = new AnalysisWriter(mockParseList, 1, "/home/rafaella/Documentos", "failTest.out");
+    }
+}

@@ -1,6 +1,5 @@
 package main.java.project;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import main.java.project.exception.DelimitadorInvalidoException;
@@ -27,15 +26,13 @@ public class AnalysisParser {
 		}
 	}
 
-	public List<String[]> parseFile(List<String> fileLines, String delimiter){
-		List<String[]> parseList = new ArrayList<String[]>();
+	public String[] parseFile(List<String> fileLines, String delimiter){
 		String[] evolutionList = new String[fileLines.size()];
 		int evolutionIndex = 0, arrayIndex = 0;
 		for(String line : fileLines)
         {	
 			if(line.substring(0, 3).equals("---")){
 				if(evolutionIndex != 0) {
-					parseList.add(evolutionList);
 					arrayIndex++;
 				}
 				evolutionIndex++;
@@ -44,6 +41,6 @@ public class AnalysisParser {
 				evolutionList[arrayIndex] += line + delimiter;
 			}
         }
-		return parseList;
+		return evolutionList;
 	}
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AnalysisWriterTest.testfileNameSuccess" project="projeto1-tdd" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="test.java.project.AnalysisWriterTest" time="39.853" displayname="AnalysisWriterTest" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisWriterTest]">
+    <testcase name="testfileNameSuccess" classname="test.java.project.AnalysisWriterTest" time="39.853" displayname="testfileNameSuccess()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisWriterTest]/[method:testfileNameSuccess()]"/>
+  </testsuite>
+</testrun>

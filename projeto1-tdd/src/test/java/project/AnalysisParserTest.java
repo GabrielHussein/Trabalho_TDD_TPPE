@@ -46,8 +46,8 @@ public class AnalysisParserTest {
     	fileLinesMock.add("---------- Evolution 1 ----------");
     	fileLinesMock.add("577");
     	AnalysisParser parserMock = new AnalysisParser(";", fileLinesMock);
-    	List<String[]> parserReturn = parserMock.parseFile(fileLinesMock, ";");
-    	assertEquals(1, parserReturn.size());
+    	String[] parserReturn = parserMock.parseFile(fileLinesMock, ";");
+    	assertEquals(parserReturn[0], ";1110;");
     }
     
 }
