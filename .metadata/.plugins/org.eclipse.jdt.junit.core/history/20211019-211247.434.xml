@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AnalysisParserTest" project="projeto1-tdd" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="test.java.project.AnalysisParserTest" time="0.037" displayname="AnalysisParserTest" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]">
+    <testcase name="testDelimiterFail" classname="test.java.project.AnalysisParserTest" time="0.02" displayname="testDelimiterFail()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testDelimiterFail()]"/>
+    <testcase name="testDelimiterSuccess" classname="test.java.project.AnalysisParserTest" time="0.008" displayname="testDelimiterSuccess()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testDelimiterSuccess()]"/>
+    <testcase name="testParser" classname="test.java.project.AnalysisParserTest" time="0.009" displayname="testParser()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testParser()]"/>
+  </testsuite>
+</testrun>

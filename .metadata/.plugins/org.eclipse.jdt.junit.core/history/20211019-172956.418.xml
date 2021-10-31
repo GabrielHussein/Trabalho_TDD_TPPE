@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AnalysisParserTest" project="projeto1-tdd" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="test.java.project.AnalysisParserTest" time="29.815" displayname="AnalysisParserTest" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]">
+    <testcase name="testDelimiterFail" classname="test.java.project.AnalysisParserTest" time="29.815" displayname="testDelimiterFail()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testDelimiterFail()]"/>
+  </testsuite>
+</testrun>

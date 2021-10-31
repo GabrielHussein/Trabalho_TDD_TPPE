@@ -1,0 +1,22 @@
+package test.java.project;
+
+import org.junit.jupiter.api.Test;
+
+public class AnalysisReaderTest {
+	
+	@Before
+	public void setup() {
+		analysis = new AnalysisReader()
+	}
+	
+	
+    @Test
+    public void testOpenFileSuccess(){
+        
+    }
+
+    @Test(expected = Exception.class)
+    public void testOpenFileFail(){
+
+    }
+}

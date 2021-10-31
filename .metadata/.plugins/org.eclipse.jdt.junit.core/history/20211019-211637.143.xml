@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="projeto1-tdd" project="projeto1-tdd" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="test.java.project.AnalysisParserTest" time="0.0" displayname="AnalysisParserTest" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]">
+    <testcase name="testDelimiterFail" classname="test.java.project.AnalysisParserTest" time="0.0" displayname="testDelimiterFail()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testDelimiterFail()]"/>
+    <testcase name="testDelimiterSuccess" classname="test.java.project.AnalysisParserTest" time="0.0" displayname="testDelimiterSuccess()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testDelimiterSuccess()]"/>
+    <testcase name="testParser" classname="test.java.project.AnalysisParserTest" time="0.0" displayname="testParser()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisParserTest]/[method:testParser()]"/>
+  </testsuite>
+  <testsuite name="test.java.project.AnalysisWriterTest" time="0.005" displayname="AnalysisWriterTest" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisWriterTest]">
+    <testcase name="testfileNameSuccess" classname="test.java.project.AnalysisWriterTest" time="0.002" displayname="testfileNameSuccess()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisWriterTest]/[method:testfileNameSuccess()]"/>
+    <testcase name="testfileNameFail" classname="test.java.project.AnalysisWriterTest" time="0.003" displayname="testfileNameFail()" uniqueid="[engine:junit-jupiter]/[class:test.java.project.AnalysisWriterTest]/[method:testfileNameFail()]"/>
+  </testsuite>
+</testrun>

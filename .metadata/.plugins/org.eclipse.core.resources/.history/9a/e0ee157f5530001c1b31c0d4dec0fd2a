@@ -1,0 +1,5 @@
+package test.java.project;
+
+public @interface Before {
+
+}

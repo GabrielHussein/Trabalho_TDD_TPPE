@@ -1,0 +1,10 @@
+codetogether.auth.token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmNvZGV0b2dldGhlci5jb20iLCJpYXQiOjE2MzQ1ODc2MjYsIm5iZiI6MTYzNDU4NzYyNiwiZXhwIjoxNjUwMTM5NjI2LCJkYXRhIjp7InVzZXIiOnsiaWQiOiIyOTU0MiJ9fX0.Ebl2cB8zgtDJmvIIdvjkQHhmS9hlMfESat06ZpU2DUo
+codetogether.main.view.displayed=true
+codetogether.username=fafaelaj@gmail.com
+default.auth=auto
+default.drive=all
+default.edit=all
+default.run=all
+default.team.only=false
+eclipse.preferences.version=1
+uuid=JzKZGYoLB7Vlh1HNsCAGXY

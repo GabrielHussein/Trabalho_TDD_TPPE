@@ -1,0 +1,28 @@
+package main.java.project;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.project.exception.ArquivoNaoEncontradoException;
+
+public class AnalysisReader {
+    private String fileName;
+    
+	private List<String> openFile(String fileName) throws ArquivoNaoEncontradoException{
+		try{
+
+			File file = new File("src/main/resources/" + fileName);
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			<String> fileLines = new ArrayList<String>();
+
+		} catch (Exception e) {
+			new ArquivoNaoEncontradoException(fileName);
+		}
+	}
+
+
+
+}
